@@ -1,0 +1,21 @@
+$imgname:a
+$nameext:b
+$imgpath:"./images/#{$imgname}.#{$nameext}"
+
+$select-color: #eb0000,#f4a746,#6c8cfb,#d0f673,#680000,#80006e,#262f4d,#4a7c3a,#8e00e1,#8e00e1,#0c110e,#007019,#a5459c,#273d75,#beaaaa,#fa5000,#adee00,#35717b,#b78e71
+
+@mixin img($imgname,$nameext)
+	background-image: url("../images/#{$imgname}.#{$nameext}")
+
+%bg-cover
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+
+%circle-bg
+	width: 100px
+	height: 100px
+	border-radius: 100px
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center

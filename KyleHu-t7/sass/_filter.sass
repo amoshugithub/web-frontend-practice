@@ -1,0 +1,145 @@
+.filter
+	background-color: #f2f2f2
+	padding-bottom: 30px
+	.filterTitle
+		width: 100px
+		height: auto
+		margin-left: 20px
+		background-color: black
+		p
+			text-align: center
+			color: white
+			padding: 5px 0
+			margin-bottom: 0
+	.filterLeft
+		.brands
+			text-align: center
+		ul.left
+			display: inline-block
+			text-align: right
+			vertical-align: top
+			list-style: none
+			margin-top: 10px
+			border-right: 1px solid gray
+			padding-right: 20px
+		ul.right
+			display: inline-block
+			text-align: right
+			vertical-align: top
+			list-style: none
+			padding-top: 10px
+	.filterCenter
+		h1
+			font-size: 26px
+			margin-bottom: 0
+		.woman
+			text-align: center
+			display: inline-block
+			width: 32%
+			height: auto
+			.womanImg
+				margin: auto
+				margin: 10px auto
+				+img(p1,jpg)
+				@extend %circle-bg
+				img
+					padding: 20%
+					opacity: 0
+					transition: opacity 0.3s
+				img:hover
+					opacity: 1
+			.totalProducts
+				h1
+					color: red
+					font-size: 20px
+				p
+					font-size: 12px
+
+		.man
+			text-align: center
+			display: inline-block
+			width: 32%
+			height: auto
+			.manImg
+				margin: auto
+				margin: 10px auto
+				+img(p2,jpg)
+				@extend %circle-bg
+				img
+					padding: 20%
+					opacity: 0
+					transition: opacity 0.3s
+				img:hover
+					opacity: 1
+			.totalProducts
+				h1
+					color: red
+					font-size: 20px
+				p
+					font-size: 12px
+
+
+		.kids
+			text-align: center
+			display: inline-block
+			width: 32%
+			height: auto
+			.kidsImg
+				margin: auto
+				margin: 10px auto
+				+img(p3,jpg)
+				@extend %circle-bg
+				img
+					padding: 20%
+					opacity: 0
+					transition: opacity 0.3s
+				img:hover
+					opacity: 1
+			.totalProducts
+				h1
+					color: red
+					font-size: 20px
+				p
+					font-size: 12px
+
+	.filterRight
+		h1
+			font-size: 20px
+			padding-top: 20px
+
+
+@for $i from 1 through 19
+	.color#{$i}
+		background-color: nth($select-color,$i)
+		height: 30px
+
+
+.filterLeft,.filterCenter,.filterRight
+	background-color: white
+	padding-top: 30px
+
+@media (max-width: 1024px)
+	.filter
+		.filterLeft
+			ul.left
+				padding-right: 10px
+				padding-left: 0
+			ul.right
+				padding-left: 0
+
+@media (max-width: 768px)
+	.filter
+		.filterLeft
+			padding-left: 0
+			ul.left
+				padding-right: 10px
+				padding-left: 0
+			ul.right
+				padding-left: 0
+
+@media (max-width: 500px)
+	.filter
+		.filterLeft
+			text-align: center
+			ul.left
+				padding-right: 20px

@@ -1,0 +1,31 @@
+.productDetail .nav-item {
+  z-index: 1; }
+  .productDetail .nav-item > .active {
+    border-bottom: solid 1px white !important; }
+  .productDetail .nav-item .nav-link {
+    text-align: center;
+    border-radius: 0;
+    background-color: white;
+    border: solid 1px gray;
+    transition: background-color 0.3;
+    color: black; }
+    .productDetail .nav-item .nav-link:hover {
+      background-color: red;
+      color: white; }
+.productDetail .tab-content {
+  position: relative;
+  top: -1px;
+  padding: 3rem 1rem;
+  border: 1px solid gray;
+  background-color: white; }
+  .productDetail .tab-content h6 {
+    color: red; }
+  .productDetail .tab-content p {
+    font-size: 9pt; }
+  .productDetail .tab-content ul {
+    padding-left: 0; }
+    .productDetail .tab-content ul li {
+      font-size: 9pt;
+      list-style: none; }
+
+/*# sourceMappingURL=qqq.css.map */
